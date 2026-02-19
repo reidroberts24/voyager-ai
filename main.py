@@ -5,10 +5,10 @@ from pathlib import Path
 import typer
 from rich.console import Console
 
-from travel_agent.agents.orchestrator import Orchestrator
-from travel_agent.output.terminal import display_itinerary
-from travel_agent.output.markdown import export_markdown
-from travel_agent.output.pdf import export_pdf
+from backend.agents.orchestrator import Orchestrator
+from backend.output.terminal import display_itinerary
+from backend.output.markdown import export_markdown
+from backend.output.pdf import export_pdf
 
 # Suppress noisy "Event loop is closed" warnings from httpx/anyio on exit
 logging.getLogger("asyncio").setLevel(logging.CRITICAL)
